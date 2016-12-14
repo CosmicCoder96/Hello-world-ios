@@ -10,6 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var txt1: UITextField!
+    @IBOutlet weak var label1: UILabel!
+    @IBAction func buttonTapped(_ sender: Any) {
+        label1.text="hi!! " + txt1.text!;
+            }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
